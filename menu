@@ -1,0 +1,7 @@
+\echo ************************************************************
+\echo "Escribe \i insert.sql para ejecutar el script de inserts"
+\echo "Escribe \i delete.sql para ejecutar el script de deletes"
+\echo "Escribe \i queries.sql para ejecutar el script de consultas"
+\echo "Escribe \i update.sql para ejecutar el script de updates"
+\echo "Escribe \i menu para volver a ver el menú"
+\echo ************************************************************
