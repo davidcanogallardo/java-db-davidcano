@@ -47,32 +47,32 @@ INSERT INTO client
 -- 1
 INSERT INTO presence 
 (id,date_enter,date_leave) VALUES
-(1,'2022-10-31 10:40:00','2022-10-31 16:45:13');
+(1,'10:40:00','16:45:13', '');
 -- 2
-INSERT INTO presence 
-(id,date_enter,date_leave) VALUES
-(1,'2022-11-02 15:17:00','2022-11-02 23:11:00');
--- 3
-INSERT INTO presence 
-(id,date_enter,date_leave) VALUES
-(2,'2022-11-25 14:46:00','2022-11-25 17:33:00');
--- 4
-INSERT INTO presence 
-(id,date_enter,date_leave) VALUES
-(3,'2022-10-18 11:27:00','2022-10-18 16:52:00');
--- 5
-INSERT INTO presence 
-(id,date_enter,date_leave) VALUES
-(2,'2022-09-14 12:49:00','2022-09-14 16:52:00');
--- 6
-INSERT INTO presence 
-(id,date_enter,date_leave) VALUES
-(5,'2022-09-14 12:49:00','2022-09-14 16:52:00');
--- 7
-INSERT INTO presence 
-(id,date_enter,date_leave) VALUES
-(7,'2022-11-25 14:03:00','2022-11-25 14:59:00');
--- 8
+        INSERT INTO presence 
+        (id,date_enter,date_leave) VALUES
+        (1,'2022-11-02 15:17:00','2022-11-02 23:11:00');
+        -- 3
+        INSERT INTO presence 
+        (id,date_enter,date_leave) VALUES
+        (2,'2022-11-25 14:46:00','2022-11-25 17:33:00');
+        -- 4
+        INSERT INTO presence 
+        (id,date_enter,date_leave) VALUES
+        (3,'2022-10-18 11:27:00','2022-10-18 16:52:00');
+        -- 5
+        INSERT INTO presence 
+        (id,date_enter,date_leave) VALUES
+        (2,'2022-09-14 12:49:00','2022-09-14 16:52:00');
+        -- 6
+        INSERT INTO presence 
+        (id,date_enter,date_leave) VALUES
+        (5,'2022-09-14 12:49:00','2022-09-14 16:52:00');
+        -- 7
+        INSERT INTO presence 
+        (id,date_enter,date_leave) VALUES
+        (7,'2022-11-25 14:03:00','2022-11-25 14:59:00');
+        -- 8
 INSERT INTO presence 
 (id,date_enter,date_leave) VALUES
 (9,'2022-04-07 12:47:00','2022-04-07 13:55:00');

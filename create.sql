@@ -24,7 +24,7 @@ CREATE TABLE pack (
 	date_end date NOT NULL,
 	discount real NOT NULL,
 	CONSTRAINT chk_price_pack CHECK(price>0),
-	CONSTRAINT chk_stock_pack CHECK(stock>0),
+	-- CONSTRAINT chk_stock_pack CHECK(stock>0),
 	CONSTRAINT chk_catalog_pack CHECK(date_end>=date_start),
 	CONSTRAINT chk_discount CHECK(discount>=0 and discount<=100)
 );
@@ -46,24 +46,24 @@ CREATE TABLE pack_products (
 
 CREATE TABLE client (
 	id SERIAL PRIMARY KEY,
-	dni VARCHAR(10) NULL,
-	name VARCHAR(15) NULL,
-	lastname VARCHAR(20) NULL,
+	dni VARCHAR(10) NOT NULL,
+	name VARCHAR(15) NOT NULL,
+	lastname VARCHAR(20) NOT NULL,
 	birthdate DATE NULL,
 	email VARCHAR(25) NULL,
-	address VARCHAR(50) array NULL,
-	phone VARCHAR(9) array
+	address VARCHAR(50) array NOT NULL,
+	phone VARCHAR(9) array NOT NULL
 );
 
-CREATE TABLE provider(
+CREATE TABLE provider (
 	id SERIAL PRIMARY KEY,
 	dni VARCHAR(10) NOT NULL,
 	name VARCHAR(15) NOT NULL,
 	lastname VARCHAR(20) NOT NULL,
-	birthdate DATE NOT NULL,
-	email VARCHAR(25) NOT NULL,
-	address address NOT NULL,
-	phone VARCHAR(9) array
+	birthdate DATE NULL,
+	email VARCHAR(25) NULL,
+	address VARCHAR(50) array NOT NULL,
+	phone VARCHAR(9) array NOT NULL
 );
 
 CREATE TABLE presence (
