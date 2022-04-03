@@ -37,13 +37,6 @@ CREATE TABLE pack_products (
 	CONSTRAINT fk_id_producto FOREIGN KEY(id_producto) references product(id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
--- create type address AS (
--- 	locality VARCHAR(50),
--- 	province VARCHAR(50),
--- 	zip_code VARCHAR(6),
--- 	address2 VARCHAR(50)
--- );
-
 CREATE TABLE client (
 	id SERIAL PRIMARY KEY,
 	dni VARCHAR(10) NOT NULL,
@@ -72,10 +65,3 @@ CREATE TABLE presence (
 	date_leave timestamp,
 	PRIMARY KEY(id, date_enter)
 );
-
--- CREATE TABLE telefon_persona(
--- 	id_persona integer,
--- 	telefon VARCHAR(15),
--- 	PRIMARY KEY(id_persona, telefon),
--- 	CONSTRAINT fk_id_persona FOREIGN KEY(id_persona) references persona(id) ON UPDATE CASCADE ON DELETE CASCADE
--- );
